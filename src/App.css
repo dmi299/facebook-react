@@ -3,36 +3,100 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 13vmin;
+  /* height: 106px; */
+  margin-top: 35px;
   pointer-events: none;
 }
+.content_fb {
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 450px;
+  margin-left: 25px;
+}
 
-@media (prefers-reduced-motion: no-preference) {
+.flex {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f0f2f5;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #1877f2;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
+.App-link:hover {
+  text-decoration: underline;
+  color: #1877f2;
+}
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* form css */
+.login-background {
+  background-color: white;
+  border-radius: 10px;
+}
+.login-container {
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: white;
+}
+.login-container .login-content {
+  padding: 15px;
+}
+.login-container .login-content .login-input{
+  margin: 5px 0;
+}
+.login-container .login-content .btn-login{
+  width: 100%;
+  margin: 10px 0;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #1877f2;
+}
+
+.text {
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn-account {
+  background-color: #42b72a;
+  margin: 10px 0;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0 16px;
 }
