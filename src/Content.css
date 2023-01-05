@@ -1,14 +1,15 @@
-.App {
+.content {
   text-align: center;
 }
 
-.App-logo {
+.content-logo {
   height: 13vmin;
   /* height: 106px; */
   margin-top: 35px;
   pointer-events: none;
 }
-.content_fb {
+
+.title-fb {
   font-size: 25px;
   font-weight: normal;
   line-height: 32px;
@@ -17,7 +18,7 @@
 }
 
 .flex {
-  display: inline-block;
+  float: left;
   vertical-align: top;
 }
 
@@ -27,28 +28,29 @@
   }
 } */
 
-.App-header {
+.content-header {
   background-color: #f0f2f5;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: black;
 }
 
-.App-link {
+.content-link {
   color: #1877f2;
   cursor: pointer;
   font-size: 15px;
   font-weight: normal;
   text-decoration: none;
 }
-.App-link:hover {
+
+.content-link:hover {
   text-decoration: underline;
   color: #1877f2;
 }
+
 /* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -63,19 +65,21 @@
   background-color: white;
   border-radius: 10px;
 }
+
 .login-container {
   width: 350px;
   margin: 0 auto;
-  border-radius: 20px;
-  background-color: white;
 }
+
 .login-container .login-content {
   padding: 15px;
 }
-.login-container .login-content .login-input{
+
+.login-container .login-content .login-input {
   margin: 5px 0;
 }
-.login-container .login-content .btn-login{
+
+.login-container .login-content .btn-login {
   width: 100%;
   margin: 10px 0;
   height: 40px;
@@ -91,6 +95,8 @@
   font-size: 15px;
   font-weight: bold;
 }
+
+
 .btn-account {
   background-color: #42b72a;
   margin: 10px 0;
@@ -99,4 +105,38 @@
   outline: none;
   border: none;
   padding: 0 16px;
+}
+
+/* Mobile: width > 1024px */
+@media only screen and (max-width: 46.1875em) {
+  .flex {
+    float: none;
+  }
+  .login-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .title-fb {
+    display: none;
+  }
+  .title-img {
+    display: block;
+      margin: 20px 0px 20px 80px;
+      
+     
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .content-fb {
+    width: 100%;
+    
+  }
+  .title-fb {
+    display: none;
+  }
+  .title-img {
+    text-align: center;
+  }
 }

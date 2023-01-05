@@ -1,23 +1,26 @@
 // import logo from './logo.svg';
-import './App.css';
+import './Content.css';
 import Footer from './Footer';
 
-function App() {
+function Content() {
   //JSX
   return (
-    <div className="">
-      <div className="App-header">
-        <div>
+    <div>
+      <div className="content-header">
+        <div className='content-fb'>
           <div className='flex' style={{ paddingRight: "45px" }}>
-            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" className="App-logo" alt="logo" />
+            <div className='title-img'> <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" className="content-logo" alt="logo" /></div>
+            <div>
+              <h2 className="title-fb">
+                Facebook helps you connect and share with the people in your life.
+              </h2>
+            </div>
 
-            <h2 className="content_fb">
-              Facebook helps you connect and share with the people in your life.
-            </h2>
           </div>
+
           <div className='shadow flex'>
             <div className="login-background">
-              <div className='login-container App'>
+              <div className='login-container content'>
                 <div className='login-content row'>
                   <div className='col-12 form-group login-input'>
                     <input type="text" placeholder='Email address or phone number' className='form-control'></input>
@@ -28,7 +31,7 @@ function App() {
                   <div className='col-12'><button className='btn-login text'>Log in</button></div>
 
                   <div className='col-12'>
-                    <a className='App-link' href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Forgotten password?</a>
+                    <a className='content-link' href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Forgotten password?</a>
                   </div>
 
                   <div className="contentCurve"></div>
@@ -39,9 +42,6 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <div>
-            <h6>Create a Page</h6><p>for a celebrity brand or business.</p>
-          </div> */}
         </div>
       </div>
       <Footer />
@@ -50,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default Content;
