@@ -107,6 +107,8 @@
   padding: 0 16px;
 }
 
+
+/* Reponsive */
 /* Mobile: width > 1024px */
 @media only screen and (max-width: 46.1875em) {
   .flex {
@@ -139,4 +141,30 @@
   .title-img {
     text-align: center;
   }
+}
+
+/* validator form login */
+.text-xs {
+  font-size: 13px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+  text-align: left;
+  color: #f02849;
+  border: #f02849;
+}
+/* input:focus:invalid {
+  box-shadow: 0 0 5px #d45252;
+  border-color: #b03535;
+}
+ 
+input:focus:valid {
+  box-shadow: 0 0 5px #1877f2;
+  border-color: #1877f2;
+} */
+.btn-toogle {
+  border: none;
+  border-radius: 50%;
+  float: right;
+  margin-top: -33px;
+  background-color: white;
 }

@@ -6,21 +6,29 @@ import { AiOutlinePlus } from 'react-icons/ai';
 import './Footer.css';
 function Footer() {
     let iconStyles = { color: "black", fontSize: "1.5em" }
+    const footer = {
+        language: [
+            "English (UK)", "Tiếng Việt", "中文(台灣)", "한국어", "日本語", "Français (France)", "ภาษาไทย", "Español", "Português (Brasil)",
+            "Português (Brasil)", "Deutsch", "Italiano"
+
+        ]
+        
+    }
     return (
         <Container className="App-pd">
             <div className="App-footer">
                 <Row>
-                    <Col className="pageFooter">English (UK)</Col>
-                    <Col>Tiếng Việt</Col>
-                    <Col>中文(台灣)</Col>
-                    <Col>한국어</Col>
-                    <Col>日本語</Col>
-                    <Col>Français (France)</Col>
-                    <Col>ภาษาไทย</Col>
-                    <Col>Español</Col>
-                    <Col>Português (Brasil)</Col>
-                    <Col>Deutsch</Col>
-                    <Col>Italiano</Col>
+                    <Col className="pageFooter">{footer.language[0]}</Col>
+                    <Col>{footer.language[1]}</Col>
+                    <Col>{footer.language[2]}</Col>
+                    <Col>{footer.language[3]}</Col>
+                    <Col>{footer.language[4]}</Col>
+                    <Col>{footer.language[5]}</Col>
+                    <Col>{footer.language[6]}</Col>
+                    <Col>{footer.language[7]}</Col>
+                    <Col>{footer.language[8]}</Col>
+                    <Col>{footer.language[9]}</Col>
+                    <Col>{footer.language[10]}</Col>
                     <Col>
                         <div><button className="click" style={{ }}><AiOutlinePlus style={iconStyles} /></button></div>
                     </Col>
