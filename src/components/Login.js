@@ -4,8 +4,6 @@ import './Login.css';
 import { AiOutlineEyeInvisible } from 'react-icons/ai'
 import { AiOutlineEye } from 'react-icons/ai'
 import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css'
-import './Modal.css'
 import Form from './Form';
 
 function Login() {
@@ -37,21 +35,21 @@ function Login() {
 
   //validator for email and phone number
   const validateAll = () => {
-    const errorMessage = {}
+    const msg = {}
 
     var mailFormat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})|([0-9]{10})+$/;
     if (isEmpty(username)) {
-      errorMessage.username = "The email address or mobile number you entered isn't connected to an account."
+      msg.username = "The email address or mobile number you entered isn't connected to an account."
     }
     if (!mailFormat.test(username)) {
-      errorMessage.username = "Email or PhoneNumber is not valid. Please provide a valid Email Address or phone number.";
+      msg.username = "Email or PhoneNumber is not valid. Please provide a valid Email Address or phone number.";
     }
     if (isEmpty(password)) {
-      errorMessage.password = "The password that you've entered is incorrect."
+      msg.password = "The password that you've entered is incorrect."
     }
 
-    setValidationMsg(errorMessage)
-    if (Object.keys(errorMessage).length > 0) return false
+    setValidationMsg(msg)
+    if (Object.keys(msg).length > 0) return false
     return true
   }
 
@@ -123,11 +121,7 @@ function Login() {
                     <div className="">
                      <Form/>
                     </div>
-                    <div className="">
-                      <Popup>
-                      </Popup>
-
-                    </div>
+                    
                   </div>
                 )}
               </Popup>

@@ -10,6 +10,7 @@
   height: 8px;
   /* margin-bottom: 5px; */
 }
+
 .popup-content {
   margin: auto;
   background-color: rgba(255, 255, 255, .8) transparent;
@@ -18,18 +19,21 @@
   border: 1px solid #d7d7d7;
   border: none;
 }
+
 .popup-overlay {
   background-color: rgba(255, 255, 255, .8);
 }
+
 .container-signup {
   /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
 }
 
 .card-signup {
-  height: 380px;
+  /* height: 380px; */
   width: 360px;
   background-color: #fff;
   position: relative;
@@ -45,6 +49,7 @@
   font-size: 35px;
   margin-left: 310px;
 }
+
 .text-signup {
   display: flex;
   /* justify-content: center;
@@ -53,6 +58,17 @@
   /* text-align: center; */
   font-weight: bold;
   font-size: 20px;
+}
+.content-link-signup {
+  font-size: 10px;
+  color: #1877f2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content-link-signup:hover {
+  text-decoration: underline;
+  color: #1877f2;
 }
 
 .para {
@@ -74,44 +90,43 @@
 }
 
 input[type="text"] {
-  height: 45px;
+  height: 40px;
   width: 100%;
   border: none;
   border-radius: 9px;
   border: 1px solid #e0e3e9;
   padding: 0 10px;
-  padding-left: 30px;
+ 
   outline: 0;
-  font-size: 13px
+  /* font-size: 13px */
 }
 
 input[type="password"] {
-  height: 45px;
+  height: 40px;
   width: 100%;
   border: none;
   border-radius: 9px;
   border: 1px solid #e0e3e9;
   padding: 0 10px;
-  padding-left: 30px;
+
   padding-right: 27px;
   outline: 0;
-  font-size: 13px;
+  /* font-size: 13px; */
 }
 
-.fa-envelope {
+/* .fa-envelope {
   position: absolute;
   left: 10px;
   cursor: pointer;
   top: 15px
-}
-
-.fa-lock {
+} */
+ /* .fa-lock {
   position: absolute;
   left: 12px;
   top: 15px;
   cursor: pointer;
   font-size: 15px
-}
+} */
 
 .input-text .fa-eye-slash {
   position: absolute;
@@ -121,7 +136,7 @@ input[type="password"] {
   cursor: pointer
 }
 
-.fa-eye {
+ .fa-eye {
   position: absolute;
   right: 10px;
   top: 15px;
@@ -143,7 +158,8 @@ input[type="password"] {
 
   background-color: #00a400;
   border-radius: 9px;
-  font-size: 12px;
+  /* font-size: 13px; */
+  font-weight: bold;
   outline: 0;
   color: #fff;
   cursor: pointer;
@@ -160,17 +176,94 @@ input[type="password"] {
   font-size: 10px;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .forgot a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .warning {
-  border: 1px solid red !important
+  border: 1px solid red !important;
 }
 
+/* .warning-icons {
+  border: 1px solid red;
+  float: right;
+} */
+
 .type_password {
-  border: 1px solid red !important
+  border: 1px solid red !important;
 }
+
+
+/* radio */
+.frame-sgup {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -8px -6px -6px; */
+  width: 100%;
+}
+.gender {
+  box-sizing: border-box;
+  color: #1c1e21;
+  display: inline-block;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  padding: 0 28px 0 10px;
+  width: 100%;
+}
+.input-radio {
+  height: 36px;
+  margin: 0;
+  position: absolute;
+  margin-left: -20px;
+}
+.radio-sgup {
+  border: 1px solid #e0e3e9;
+  display: inline-block;
+  flex: 1 0 auto;
+  border-radius: 5px;
+  /* margin: 15px 8px 0px; */
+  margin-left: 2px;
+  margin-top: 15px;
+  font-weight: normal;
+  height: 40px;
+  width: 30%;
+  background-color: #fff;
+  font-size: 13px;
+}
+
+.select-sgup {
+  /* border: 1px solid #e0e3e9; */
+  display: inline-block;
+  flex: 1 0 auto;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-top: 15px;
+  font-weight: normal;
+  height: 35px;
+  width: 30%;
+  background-color: #fff;
+  font-size: 13px;
+}
+.select-pd{
+  box-sizing: border-box;
+  color: #1c1e21;
+  display: inline-block;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  width: 100%;
+}
+
+.custom-show {
+  display: block;
+}
+.custom-hide {
+  display: none;
+}
+
+
+

@@ -14,7 +14,7 @@ function Content() {
     <div>
       <div className="content-header">
         <div className='content-fb'>
-          <div className='flex' style={{ paddingRight: "45px" }}>
+          <div className='flex' style={{ paddingRight: "100px" }}>
             <div className='title-img'> <img src={content.imgSrc} className="content-logo" alt="logo" /></div>
             <div>
               <h2 className="title-fb">
