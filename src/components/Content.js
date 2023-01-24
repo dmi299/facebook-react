@@ -23,13 +23,12 @@ function Content() {
             </div>
 
           </div>
-          
-         <Login/>
+
+          <Login />
         </div>
       </div>
       <Footer />
     </div>
-
   );
 }
 

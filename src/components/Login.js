@@ -4,8 +4,11 @@ import './Login.css';
 import { AiOutlineEyeInvisible } from 'react-icons/ai'
 import { AiOutlineEye } from 'react-icons/ai'
 import Popup from 'reactjs-popup';
-import Form from './Form';
+import Form from './Signup';
 
+import { Routes, Route} from 'react-router-dom';
+import ResetPassword from '../pages/ResetPassword';
+import {Link} from 'react-router-dom'
 function Login() {
   // khởi tạo
   const [validationMsg, setValidationMsg] = useState('');
@@ -102,7 +105,7 @@ function Login() {
             </div>
 
             <div className='col-12'>
-              <a className='content-link' href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Forgotten password?</a>
+              <Link className='content-link' to="/resetpassword">Forgotten password?</Link>
             </div>
 
             <div className="contentCurve"></div>
@@ -129,6 +132,7 @@ function Login() {
           </div>
         </div>
       </div>
+
     </div>
   )
 }
