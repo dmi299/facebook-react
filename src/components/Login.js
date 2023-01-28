@@ -5,9 +5,6 @@ import { AiOutlineEyeInvisible } from 'react-icons/ai'
 import { AiOutlineEye } from 'react-icons/ai'
 import Popup from 'reactjs-popup';
 import Form from './Signup';
-
-import { Routes, Route} from 'react-router-dom';
-import ResetPassword from '../pages/ResetPassword';
 import {Link} from 'react-router-dom'
 function Login() {
   // khởi tạo
@@ -106,6 +103,7 @@ function Login() {
 
             <div className='col-12'>
               <Link className='content-link' to="/resetpassword">Forgotten password?</Link>
+              {/* <Outlet/> */}
             </div>
 
             <div className="contentCurve"></div>

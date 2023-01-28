@@ -5,6 +5,7 @@ import Content from './components/Content';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import ResetPassword from './pages/ResetPassword';
+import ConfirmCode from './pages/ConfirmCode';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,9 +13,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Content />}>
-          <Route path='/resetpassword' element={<ResetPassword />} />
         </Route>
-
+        <Route path='/resetpassword' element={<ResetPassword />} />
+        <Route path='/confirmcode' element={<ConfirmCode />} />
       </Routes>
 
     </BrowserRouter>
