@@ -71,7 +71,7 @@ const ConfirmCode = () => {
                                     <button
                                         type='button'
                                         className='btn-send text'
-                                    ><Link className='re-linksend' to="/confirmcode">Send</Link>
+                                    ><Link className='re-linksend' to="/confirmcode">Confirm</Link>
                                     </button>
                                     <button
                                         type='button'
